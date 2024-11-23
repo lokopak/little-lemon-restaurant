@@ -1,16 +1,10 @@
 import "./App.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hompage from "./pages/Homepage";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <>
-      <Header />
-      <main>
-        <Hompage />
-      </main>
-      <Footer />
+      <Layout />
     </>
   );
 }

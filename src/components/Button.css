@@ -1,0 +1,14 @@
+.button {
+  display: inline-block;
+  padding: 8px 8px;
+  border-radius: 8px;
+  max-width: 200px;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-accent {
+  background-color: var(--lm-accent-color);
+}

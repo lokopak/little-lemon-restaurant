@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 60px;
+  gap: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: var(--lm-dark-color);
+  font-size: 20px;
+  font-weight: 500;
+}
