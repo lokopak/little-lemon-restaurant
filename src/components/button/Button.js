@@ -6,7 +6,10 @@ export default function Button(props) {
   }
 
   return (
-    <button type="button" className={`button ${getClassByColor()}`}>
+    <button
+      type={props.type ? props.type : "button"}
+      className={`button ${getClassByColor()}`}
+    >
       {props.label}
     </button>
   );

@@ -1,14 +1,21 @@
 import { useState } from "react";
+import Button from "../button/Button";
 import "./BookingForm.css";
 
-export default function BookingForm(props) {
+export default function BookingForm({ availableTimes, onDateChange }) {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState("");
   const [occasion, setOccasion] = useState("");
 
+  function updateDate(date) {
+    setDate(date);
+    onDateChange(date);
+  }
+
   return (
     <form className="booking-form">
+      <h3 className="text-primary">Reservation</h3>
       <div className="booking-form-row">
         <label htmlFor="res-date">Choose date</label>
         <input
@@ -17,7 +24,7 @@ export default function BookingForm(props) {
           id="res-date"
           name="res-date"
           value={date}
-          onChange={($event) => setDate($event.target.value)}
+          onChange={($event) => updateDate($event.target.value)}
         />
       </div>
       <div className="booking-form-row">
@@ -28,8 +35,8 @@ export default function BookingForm(props) {
           value={time}
           onChange={($event) => setTime($event.target.value)}
         >
-          {props.availableTimes.map((time) => (
-            <option>{time}</option>
+          {availableTimes.map((time) => (
+            <option key={time}>{time}</option>
           ))}
         </select>
       </div>
@@ -61,7 +68,11 @@ export default function BookingForm(props) {
         </select>
       </div>
       <div className="booking-form-row">
-        <button type="submit">Make your reservation</button>
+        <Button
+          type="submit"
+          label={"Make your reservation"}
+          color={"accent"}
+        />
       </div>
     </form>
   );

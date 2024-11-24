@@ -78,3 +78,34 @@ a:visited {
 .text-bold {
   font-weight: bold;
 }
+
+input,
+select {
+  font-family: var(--lm-font-faily);
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--lm-light-grey-color);
+  outline: none;
+}
+
+select {
+  appearance: none;
+  position: relative;
+  background-image: url("/public/assets/icons/dropdown-toggle.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+}
+
+select::after {
+  content: ">";
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  color: currentColor;
+  right: 10px;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--lm-primary-color);
+}
