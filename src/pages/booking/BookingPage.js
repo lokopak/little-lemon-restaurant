@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import BookingForm from "../components/BookingForm";
+import BookingForm from "../../components/booking-form/BookingForm";
 import "./BookingPage.css";
 
 export default function BookingPage() {

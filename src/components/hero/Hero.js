@@ -1,4 +1,4 @@
-import CallToActions from "./CallToActions";
+import CallToActions from "../call-to-actions/CallToActions";
 import "./Hero.css";
 
 export default function Hero() {

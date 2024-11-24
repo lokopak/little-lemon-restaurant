@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "../button/Button";
 import "./CallToActions.css";
 
 export default function CallToActions() {

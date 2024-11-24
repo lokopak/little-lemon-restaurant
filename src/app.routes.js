@@ -1,9 +1,9 @@
-import AboutPage from "./pages/AboutPage";
-import BookingPage from "./pages/BookingPage";
-import Hompage from "./pages/Homepage";
-import Login from "./pages/Login";
-import MenuPage from "./pages/MenuPage";
-import OrderOnlinePage from "./pages/OrderOnlinePage";
+import AboutPage from "./pages/about/AboutPage";
+import BookingPage from "./pages/booking/BookingPage";
+import Hompage from "./pages/home/Homepage";
+import Login from "./pages/login/Login";
+import MenuPage from "./pages/menu/MenuPage";
+import OrderOnlinePage from "./pages/order-online/OrderOnlinePage";
 
 export const APP_ROUTES = [
   {

@@ -1,6 +1,6 @@
-import Button from "./Button";
+import Button from "../button/Button";
+import Specials from "../specials/Specials";
 import "./Highlights.css";
-import Specials from "./Specials";
 
 export default function Highlights() {
   const specials = [

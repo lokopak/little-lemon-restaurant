@@ -1,7 +1,7 @@
 import { Outlet, Route, Routes } from "react-router-dom";
-import { APP_ROUTES } from "../app.routes";
-import Footer from "./Footer";
-import Header from "./Header";
+import { APP_ROUTES } from "../../app.routes";
+import Footer from "../footer/Footer";
+import Header from "../header/Header";
 
 function defineRoutes() {
   return APP_ROUTES.map((item) => (
