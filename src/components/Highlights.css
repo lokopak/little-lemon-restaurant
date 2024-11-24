@@ -1,4 +1,30 @@
-.hightlights {
+.highlights {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
-  height: 745px;
+  padding: 4rem 0;
+}
+
+.hero + .highlights {
+  padding-top: 6rem;
+}
+
+.highlights .container {
+  display: flex;
+}
+
+.highlights-heading {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.highlights-specials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
 }

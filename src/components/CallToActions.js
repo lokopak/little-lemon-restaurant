@@ -5,7 +5,7 @@ export default function CallToActions() {
   return (
     <div className="call-to-actions">
       <div className="call-to-actions-image">
-        <img src="/assets/restaurant chef B.jpg" alt="Call to actions" />
+        <img src="/assets/restaurantfood.jpg" alt="Call to actions" />
       </div>
       <div className="call-to-actions-content">
         <h2 className="text-accent">Little Lemon</h2>

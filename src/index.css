@@ -17,6 +17,7 @@ body {
   --lm-dark-color: #333333;
   --lm-font-faily: Karla, sans-serif;
   --lm-heading-font-family: "Markazi Text", serif;
+  --lm-light-grey-color: #edefee;
 }
 
 body {
@@ -45,15 +46,35 @@ h3 {
 }
 
 a {
+  color: #000000;
   text-decoration: none;
 }
 
+a:visited {
+  color: #000000;
+}
+
 .container {
-  max-width: 880px;
+  width: min(880px, 100%);
   display: flex;
   margin: 0 auto;
 }
 
 .text-accent {
   color: var(--lm-accent-color) !important;
+}
+
+.text-secondary {
+  color: var(--lm-secondary-color) !important;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.text-bold {
+  font-weight: bold;
 }

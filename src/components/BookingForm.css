@@ -1,0 +1,17 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 16px;
+}
+
+.booking-form-row {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 16px;
+}
+
+.booking-form-input {
+  width: 100%;
+}

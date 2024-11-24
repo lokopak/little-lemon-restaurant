@@ -12,7 +12,7 @@
   position: relative;
   top: 24px;
   border-radius: 16px;
-  width: min(375px, 100%);
+  width: 50%;
   height: 400px;
   overflow: hidden;
 }
@@ -28,9 +28,15 @@
   flex-direction: column;
   box-sizing: border-box;
   padding: 24px 0;
-  width: min(360px, 100%);
+  width: 50%;
   color: var(--lm-light-color);
 }
+
+/* @media (min-width: 1440px) {
+  .call-to-actions-image {
+    width: 50%;
+  }
+} */
 
 .call-to-actions-content h3,
 .call-to-actions-content p {
@@ -42,7 +48,7 @@
   width: 80%;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 880px) {
   .call-to-actions {
     flex-direction: row-reverse;
   }
