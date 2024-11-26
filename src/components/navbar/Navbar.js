@@ -3,7 +3,7 @@ import { APP_ROUTES } from "../../app.routes";
 import "./Navbar.css";
 
 function renderLinks() {
-  return APP_ROUTES.map((item) => (
+  return APP_ROUTES.filter((item) => item.hasMenu).map((item) => (
     <li key={item.name}>
       <Link to={item.url}>{item.label}</Link>
     </li>
