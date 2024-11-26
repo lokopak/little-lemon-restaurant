@@ -15,7 +15,7 @@ export default function BookingForm({ availableTimes, onDateChange }) {
 
   return (
     <form className="booking-form">
-      <h3 className="text-primary">Reservation</h3>
+      <h3 className="text-primary">Book Now</h3>
       <div className="booking-form-row">
         <label htmlFor="res-date">Choose date</label>
         <input

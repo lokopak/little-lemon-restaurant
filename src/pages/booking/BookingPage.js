@@ -2,7 +2,7 @@ import { useReducer } from "react";
 import BookingForm from "../../components/booking-form/BookingForm";
 import "./BookingPage.css";
 
-function initializeTimes() {
+async function initializeTimes() {
   return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
 }
 
