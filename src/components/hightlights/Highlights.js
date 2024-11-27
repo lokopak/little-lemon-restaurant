@@ -40,7 +40,7 @@ export default function Highlights() {
           </div>
           <div className="highlights-specials">
             {specials.map((item) => (
-              <Specials item={item} />
+              <Specials item={item} key={item.id} />
             ))}
           </div>
         </div>

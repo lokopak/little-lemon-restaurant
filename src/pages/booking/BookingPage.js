@@ -1,28 +1,19 @@
 import { useReducer } from "react";
+import { fetchAPI } from "../../api/api";
 import BookingForm from "../../components/booking-form/BookingForm";
 import "./BookingPage.css";
 
-const fetchApi = window.fetchApi;
-
-async function initializeTimes(initialAvaliableTimes) {
-  return [
-    ...initialAvaliableTimes,
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00",
-  ];
-}
-
-const updateTimes = (state, action) => {
-  console.log("fetchApi", fetchApi);
-  const response = fetchApi(new Date());
-  return response;
-};
-
 export default function BookingPage() {
+  const updateTimes = (availableTimes, date) => {
+    const response = fetchAPI(new Date(date));
+    return response.length !== 0 ? response : availableTimes;
+  };
+
+  const initializeTimes = (initialAvailableTimes) => [
+    ...initialAvailableTimes,
+    ...fetchAPI(new Date()),
+  ];
+
   const [availableTimes, dispatchOnDateChange] = useReducer(
     updateTimes,
     [],
@@ -31,7 +22,10 @@ export default function BookingPage() {
 
   return (
     <div className="container">
-      <BookingForm availableTimes={availableTimes} onDateChange={updateTimes} />
+      <BookingForm
+        availableTimes={availableTimes}
+        dispatchOnDateChange={dispatchOnDateChange}
+      />
     </div>
   );
 }

@@ -1,4 +1,32 @@
 .testimonials {
   background-color: var(--lm-light-color);
-  height: 745px;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+.testimonials-heading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.testimonials-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.testimonial-ratings {
+  color: var(--lm-accent-color);
+}
+
+.testimonials-card-picture {
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 1/1;
 }

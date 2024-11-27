@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "../button/Button";
 import "./BookingForm.css";
 
-export default function BookingForm({ availableTimes, onDateChange }) {
+export default function BookingForm({ availableTimes, dispatchOnDateChange }) {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState("");
@@ -10,7 +10,6 @@ export default function BookingForm({ availableTimes, onDateChange }) {
 
   function updateDate(date) {
     setDate(date);
-    onDateChange(date);
   }
 
   return (
