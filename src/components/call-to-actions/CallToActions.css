@@ -1,19 +1,20 @@
 .call-to-actions {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   box-sizing: border-box;
-  padding: 0;
+  padding: 0 16px;
   width: 100%;
   position: relative;
   justify-content: space-between;
+  align-items: center;
 }
 
 .call-to-actions-image {
   position: relative;
-  top: 24px;
+  top: 52px;
   border-radius: 16px;
-  width: 50%;
-  height: 400px;
+  width: min(50%, 250px);
+  height: 350px;
   overflow: hidden;
 }
 
@@ -28,7 +29,7 @@
   flex-direction: column;
   box-sizing: border-box;
   padding: 24px 0;
-  width: 50%;
+  flex: 1;
   color: var(--lm-light-color);
 }
 
@@ -49,7 +50,7 @@
 }
 
 @media (min-width: 880px) {
-  .call-to-actions {
-    flex-direction: row-reverse;
+  .call-to-actions-image {
+    width: 45%;
   }
 }

@@ -18,6 +18,7 @@ body {
   --lm-font-faily: Karla, sans-serif;
   --lm-heading-font-family: "Markazi Text", serif;
   --lm-light-grey-color: #edefee;
+  --lm-background-color: #ffffff;
 }
 
 body {
@@ -108,4 +109,8 @@ select::after {
 input:focus,
 select:focus {
   border-color: var(--lm-primary-color);
+}
+
+.spacer {
+  flex: 1 1 auto;
 }

@@ -3,24 +3,86 @@ header {
   padding: 0;
   width: 100%;
   height: calc(76px + 20px * 2);
+  position: fixed;
+  background-color: var(--lm-background-color);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  transition: box-shadow 250ms ease-in-out;
+  box-shadow: none;
+}
+
+header.scrolled {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 header .container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   height: 100%;
   align-items: center;
   gap: 1rem;
   box-sizing: border-box;
+  padding: 1rem 1rem;
 }
 
 header .logo {
   display: inline-block;
-  width: 200px;
+  height: 50px;
 }
 
 header .logo img {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.menu-toggle {
+  display: inline-block;
+  cursor: pointer;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: calc(76px + 20px * 2);
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out, opacity 250ms ease-in-out;
+}
+
+header nav a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+header.menu-open nav ul {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 940px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  header nav ul {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    flex-direction: row;
+  }
 }

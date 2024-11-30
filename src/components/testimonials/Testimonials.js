@@ -19,7 +19,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    id: 2,
+    id: 3,
     author: "Lynda S Nielsen",
     comment:
       "Porro autem velit obcaecati provident, aut expedita error dolorum excepturi cupiditate numquam rerum ad, aspernatur minus.",

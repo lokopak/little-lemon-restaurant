@@ -12,3 +12,8 @@
 .button-accent {
   background-color: var(--lm-accent-color);
 }
+
+.button-icon {
+  background: transparent;
+  border-radius: 50%;
+}

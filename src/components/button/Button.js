@@ -1,16 +1,27 @@
 import "./Button.css";
 
-export default function Button(props) {
+export default function Button({
+  color,
+  type,
+  label,
+  onClick,
+  className,
+  children,
+  icon,
+}) {
   function getClassByColor() {
-    return props.color ? `button-${props.color}` : "";
+    return color ? `button-${color}` : "";
   }
 
   return (
     <button
-      type={props.type ? props.type : "button"}
-      className={`button ${getClassByColor()}`}
+      type={type ? type : "button"}
+      className={`button ${className} ${getClassByColor()} ${
+        icon ? "button-icon" : ""
+      }`}
+      onClick={onClick}
     >
-      {props.label}
+      {label || children}
     </button>
   );
 }

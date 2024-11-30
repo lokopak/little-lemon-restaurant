@@ -2,18 +2,18 @@ import { Link } from "react-router-dom";
 import { APP_ROUTES } from "../../app.routes";
 import "./Navbar.css";
 
-function renderLinks() {
-  return APP_ROUTES.filter((item) => item.hasMenu).map((item) => (
-    <li key={item.name}>
-      <Link to={item.url}>{item.label}</Link>
-    </li>
-  ));
-}
-
 export default function Navbar() {
+  function renderLinks() {
+    return APP_ROUTES.filter((item) => item.hasMenu).map((item) => (
+      <li key={item.name}>
+        <Link to={item.url}>{item.label}</Link>
+      </li>
+    ));
+  }
+
   return (
     <>
-      <nav className="main-nav">
+      <nav id="main-nav" className="main-nav">
         <ul>{renderLinks()}</ul>
       </nav>
     </>
