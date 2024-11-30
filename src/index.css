@@ -15,15 +15,15 @@ body {
   --lm-alternate-color: #fbdabb;
   --lm-light-color: #edefee;
   --lm-dark-color: #333333;
-  --lm-font-faily: Karla, sans-serif;
+  --lm-font-family: Karla, sans-serif;
   --lm-heading-font-family: "Markazi Text", serif;
   --lm-light-grey-color: #edefee;
   --lm-background-color: #ffffff;
 }
 
 body {
-  font-family: var(--lm-font-faily);
-  font-size: 16px;
+  font-family: var(--lm-font-family);
+  font-size: clamp(0.625rem, 0.3922rem + 1.0345vw, 1rem);
   font-weight: normal;
   background-color: #ffffff;
   color: #000000;
@@ -39,11 +39,11 @@ h6 {
 }
 
 h2 {
-  font-size: 64px;
+  font-size: clamp(3.5rem, 3.1897rem + 1.3793vw, 4rem); /* 64px*/
 }
 
 h3 {
-  font-size: 40px;
+  font-size: clamp(2rem, 1.6897rem + 1.3793vw, 2.5rem); /* 40px*/
 }
 
 a {
@@ -56,9 +56,10 @@ a:visited {
 }
 
 .container {
-  width: min(880px, 100%);
-  display: flex;
+  max-width: 880px;
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .text-accent {
@@ -83,7 +84,7 @@ a:visited {
 input,
 select {
   font-family: var(--lm-font-faily);
-  padding: 10px 16px;
+  padding: 0.65rem 1rem;
   border-radius: 8px;
   border: 1px solid var(--lm-light-grey-color);
   outline: none;

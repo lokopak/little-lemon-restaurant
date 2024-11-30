@@ -32,7 +32,9 @@ export default function Header() {
 
   return (
     <header
-      className={(scrolled ? "scrolled" : "") + (isOpen ? "menu-open" : "")}
+      className={[scrolled ? "scrolled" : "", isOpen ? "menu-open" : ""].join(
+        " "
+      )}
     >
       <div className="container">
         <div className="logo">

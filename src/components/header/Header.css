@@ -2,13 +2,13 @@ header {
   display: block;
   padding: 0;
   width: 100%;
-  height: calc(76px + 20px * 2);
+  height: 76px;
   position: fixed;
   background-color: var(--lm-background-color);
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 4;
   transition: box-shadow 250ms ease-in-out;
   box-shadow: none;
 }
@@ -52,7 +52,7 @@ header nav ul {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: calc(76px + 20px * 2);
+  top: 76px;
   left: 0;
   width: 100%;
   background-color: #ffffff;
