@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import FacebooIcon from "../../assets/icons/facebook.svg";
 import InstagramIcon from "../../assets/icons/instagram.svg";
 import XTwitterIcon from "../../assets/icons/x-twitter.svg";
+import Logo from "../../assets/Logo.svg";
 import "./Footer.css";
 
 const FOOTER_LINKS = [
@@ -60,7 +61,7 @@ export default function Footer() {
     <footer>
       <div className="container footer-container">
         <div className="footer-row footer-logo">
-          <img src="/assets/Logo.svg" alt="Little Lemon"></img>
+          <img src={Logo} alt="Little Lemon"></img>
         </div>
         <div className="footer-row footer-social">
           {SOCIALS.map((item) => (
