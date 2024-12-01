@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/little-lemon-restaurant/static/css/main.81e9bcc8.css",
-    "main.js": "/little-lemon-restaurant/static/js/main.538bd9fd.js",
-    "static/js/453.ed863653.chunk.js": "/little-lemon-restaurant/static/js/453.ed863653.chunk.js",
-    "static/media/Logo.svg": "/little-lemon-restaurant/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
-    "index.html": "/little-lemon-restaurant/index.html",
-    "static/media/instagram.svg": "/little-lemon-restaurant/static/media/instagram.178dba441287320186a93fd457f8a95e.svg",
-    "static/media/facebook.svg": "/little-lemon-restaurant/static/media/facebook.4eb66da06175bec3116d1307f3cbf9d5.svg",
-    "static/media/x-twitter.svg": "/little-lemon-restaurant/static/media/x-twitter.dbcdac0b51f5e96382640f1b3a068618.svg",
-    "static/media/dropdown-toggle.svg": "/little-lemon-restaurant/static/media/dropdown-toggle.e2949dc087e7f088516c.svg",
-    "main.81e9bcc8.css.map": "/little-lemon-restaurant/static/css/main.81e9bcc8.css.map",
-    "main.538bd9fd.js.map": "/little-lemon-restaurant/static/js/main.538bd9fd.js.map",
-    "453.ed863653.chunk.js.map": "/little-lemon-restaurant/static/js/453.ed863653.chunk.js.map"
+    "main.css": "https://lokopak.github.io/little-lemon-restaurant/static/css/main.f2871695.css",
+    "main.js": "https://lokopak.github.io/little-lemon-restaurant/static/js/main.3be89852.js",
+    "static/js/453.ed863653.chunk.js": "https://lokopak.github.io/little-lemon-restaurant/static/js/453.ed863653.chunk.js",
+    "static/media/Logo.svg": "https://lokopak.github.io/little-lemon-restaurant/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
+    "index.html": "https://lokopak.github.io/little-lemon-restaurant/index.html",
+    "static/media/instagram.svg": "https://lokopak.github.io/little-lemon-restaurant/static/media/instagram.178dba441287320186a93fd457f8a95e.svg",
+    "static/media/facebook.svg": "https://lokopak.github.io/little-lemon-restaurant/static/media/facebook.4eb66da06175bec3116d1307f3cbf9d5.svg",
+    "static/media/x-twitter.svg": "https://lokopak.github.io/little-lemon-restaurant/static/media/x-twitter.dbcdac0b51f5e96382640f1b3a068618.svg",
+    "static/media/dropdown-toggle.svg": "https://lokopak.github.io/little-lemon-restaurant/static/media/dropdown-toggle.e2949dc087e7f088516c.svg",
+    "main.f2871695.css.map": "https://lokopak.github.io/little-lemon-restaurant/static/css/main.f2871695.css.map",
+    "main.3be89852.js.map": "https://lokopak.github.io/little-lemon-restaurant/static/js/main.3be89852.js.map",
+    "453.ed863653.chunk.js.map": "https://lokopak.github.io/little-lemon-restaurant/static/js/453.ed863653.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81e9bcc8.css",
-    "static/js/main.538bd9fd.js"
+    "static/css/main.f2871695.css",
+    "static/js/main.3be89852.js"
   ]
 }
