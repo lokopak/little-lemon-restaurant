@@ -19,7 +19,6 @@ export default function BookingForm({
 
   function updateDate(date) {
     if (date) {
-      console.log("updateDate", date);
       dispatchOnDateChange(date);
     }
     setFormValues({ ...formValues, resDate: date });
@@ -68,7 +67,7 @@ export default function BookingForm({
             ) : null}
           </div>
           <div className="booking-form-row">
-            <label htmlFor="res-time">Choose time</label>
+            <label htmlFor="resTime">Choose time</label>
             <Field
               component="select"
               className={[
@@ -113,6 +112,7 @@ export default function BookingForm({
               id="occasion"
               name="occasion"
             >
+              <option value="">Select an Option</option>
               <option>Birthday</option>
               <option>Anniversary</option>
             </Field>
