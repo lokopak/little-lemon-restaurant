@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/little-lemon-restaurant/static/css/main.81e9bcc8.css",
-    "main.js": "/little-lemon-restaurant/static/js/main.244f80dd.js",
+    "main.js": "/little-lemon-restaurant/static/js/main.d2a00695.js",
     "static/js/453.ed863653.chunk.js": "/little-lemon-restaurant/static/js/453.ed863653.chunk.js",
     "static/media/Logo.svg": "/little-lemon-restaurant/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
     "index.html": "/little-lemon-restaurant/index.html",
@@ -10,11 +10,11 @@
     "static/media/x-twitter.svg": "/little-lemon-restaurant/static/media/x-twitter.dbcdac0b51f5e96382640f1b3a068618.svg",
     "static/media/dropdown-toggle.svg": "/little-lemon-restaurant/static/media/dropdown-toggle.e2949dc087e7f088516c.svg",
     "main.81e9bcc8.css.map": "/little-lemon-restaurant/static/css/main.81e9bcc8.css.map",
-    "main.244f80dd.js.map": "/little-lemon-restaurant/static/js/main.244f80dd.js.map",
+    "main.d2a00695.js.map": "/little-lemon-restaurant/static/js/main.d2a00695.js.map",
     "453.ed863653.chunk.js.map": "/little-lemon-restaurant/static/js/453.ed863653.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81e9bcc8.css",
-    "static/js/main.244f80dd.js"
+    "static/js/main.d2a00695.js"
   ]
 }
