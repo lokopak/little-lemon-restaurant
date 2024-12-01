@@ -4,7 +4,7 @@ export default function Specials(props) {
   return (
     <article className="specials">
       <figure className="specials-image">
-        <img src={props.item.image} alt="Specials" />
+        <img src={process.env.PUBLIC_URL + props.item.image} alt="Specials" />
       </figure>
       <div className="specials-content">
         <div className="specials-heading">
