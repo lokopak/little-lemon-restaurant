@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import FacebooIcon from "../../assets/icons/facebook.svg";
+import InstagramIcon from "../../assets/icons/instagram.svg";
+import XTwitterIcon from "../../assets/icons/x-twitter.svg";
 import "./Footer.css";
 
 const FOOTER_LINKS = [
@@ -38,17 +41,17 @@ const SOCIALS = [
   {
     href: "https://www.facebook.com",
     label: "Facebook",
-    icon: "facebook.svg",
+    icon: FacebooIcon,
   },
   {
     href: "https://www.instagram.com",
     label: "Instagram",
-    icon: "instagram.svg",
+    icon: InstagramIcon,
   },
   {
     href: "https://www.twitter.com",
     label: "Twitter",
-    icon: "x-twitter.svg",
+    icon: XTwitterIcon,
   },
 ];
 
@@ -68,7 +71,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               key={item.label}
             >
-              <img src={`/assets/icons/${item.icon}`} alt={item.label} />
+              <img src={item.icon} alt={item.label} />
             </a>
           ))}
         </div>

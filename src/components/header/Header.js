@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import Logo from "../../assets/Logo.svg";
 import Button from "../button/Button";
 import Navbar from "../navbar/Navbar";
 import "./Header.css";
@@ -39,7 +40,7 @@ export default function Header() {
       <div className="container">
         <div className="logo">
           <h1>
-            <img src="/assets/Logo.svg" alt="Little Lemon" />
+            <img src={Logo} alt="Little Lemon" />
           </h1>
         </div>
         <Navbar />
