@@ -2,10 +2,10 @@ import "./Specials.css";
 
 export default function Specials(props) {
   return (
-    <div className="specials">
-      <div className="specials-image">
+    <article className="specials">
+      <figure className="specials-image">
         <img src={props.item.image} alt="Specials" />
-      </div>
+      </figure>
       <div className="specials-content">
         <div className="specials-heading">
           <h4>{props.item.name}</h4>
@@ -21,6 +21,6 @@ export default function Specials(props) {
           </a>
         </div>
       </div>
-    </div>
+    </article>
   );
 }

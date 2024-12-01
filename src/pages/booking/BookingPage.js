@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { fetchAPI } from "../../api/api";
 import { APP_ROUTES } from "../../app.routes";
 import BookingForm from "../../components/booking-form/BookingForm";
-import Modal from "../../components/overlay/Modal";
+import Modal from "../../components/modal/Modal";
 import "./BookingPage.css";
 
 export default function BookingPage() {

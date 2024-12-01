@@ -3,9 +3,9 @@ import TestimonialRatings from "./TestimonialsRating";
 
 export default function TestimonialsCard({ item }) {
   return (
-    <div className="testimonials-card" key={item.id}>
+    <article className="testimonials-card" key={item.id}>
       <TestimonialRatings rating={item.rating} />
-      <div className="testimonials-card-content">
+      <figure className="testimonials-card-content">
         <img
           className="testimonials-card-picture"
           src={item.image}
@@ -14,8 +14,8 @@ export default function TestimonialsCard({ item }) {
           width={50}
         />
         <span className="testimonials-card-author">{item.author}</span>
-      </div>
+      </figure>
       <p className="testimonials-comment">{item.comment}</p>
-    </div>
+    </article>
   );
 }
