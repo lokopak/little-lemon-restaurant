@@ -8,7 +8,7 @@ export default function TestimonialsCard({ item }) {
       <figure className="testimonials-card-content">
         <img
           className="testimonials-card-picture"
-          src={item.image}
+          src={process.env.PUBLIC_URL + item.image}
           alt={item.author}
           height={50}
           width={50}

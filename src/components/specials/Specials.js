@@ -16,7 +16,10 @@ export default function Specials(props) {
           <a href="/specials" className="link text-bold">
             Order a delivery
             <span>
-              <img src="/assets/icons/motocicle.svg" alt="Delivery" />
+              <img
+                src={process.env.PUBLIC_URL + "/assets/icons/motocicle.svg"}
+                alt="Delivery"
+              />
             </span>
           </a>
         </div>

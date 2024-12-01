@@ -14,7 +14,10 @@ export default function CallToActions() {
         <Button label={"Reserve a Table"} color={"accent"} />
       </div>
       <div className="call-to-actions-image">
-        <img src="/assets/restaurantfood.jpg" alt="Call to actions" />
+        <img
+          src={process.env.PUBLIC_URL + "/assets/restaurantfood.jpg"}
+          alt="Call to actions"
+        />
       </div>
     </div>
   );
