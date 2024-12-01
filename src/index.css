@@ -11,6 +11,7 @@ body {
 :root {
   --lm-primary-color: #495e57;
   --lm-accent-color: #f4ce14;
+  --lm-warn-color: hsl(0, 94%, 69%);
   --lm-secondary-color: #ee9972;
   --lm-alternate-color: #fbdabb;
   --lm-light-color: #edefee;
@@ -108,8 +109,18 @@ select::after {
 }
 
 input:focus,
-select:focus {
+input:hover,
+select:focus,
+select:hover {
   border-color: var(--lm-primary-color);
+}
+
+input:focus,
+select:focus {
+  outline: 0;
+  -webkit-box-shadow: 0px 0px 4px 4px rgb(73, 94, 0.3);
+  -moz-box-shadow: 0px 0px 4px 4px rgba(162, 173, 3, 0.3);
+  box-shadow: 0px 0px 4px 4px rgba(162, 173, 3, 0.3);
 }
 
 .spacer {

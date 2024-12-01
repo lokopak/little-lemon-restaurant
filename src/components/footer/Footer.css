@@ -2,6 +2,7 @@ footer {
   display: block;
   background-color: var(--lm-light-color);
   padding-top: 24px;
+  overflow: hidden;
 }
 
 .footer-container {
